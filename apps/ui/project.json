@@ -1,0 +1,19 @@
+{
+  "name": "ui",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/ui",
+  "projectType": "application",
+  "targets": {
+    "container": {
+      "executor": "@nx-tools/nx-container:build",
+      "dependsOn": ["build"],
+      "options": {
+        "engine": "docker",
+        "context": "apps/ui",
+        "tags": ["trivy-ui:latest"],
+        "push": true
+      }
+    }
+  },
+  "tags": []
+}

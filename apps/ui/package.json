@@ -1,0 +1,21 @@
+{
+  "name": "ui",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "nx": {
+    "tags": ["scope:ui"],
+    "implicitDependencies": ["tag:scope:ui"],
+    "targets": {
+      "build": {
+        "outputs": ["{projectRoot}/.output", "{projectRoot}/.nuxt"]
+      }
+    }
+  }
+}
