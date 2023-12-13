@@ -87,4 +87,4 @@ build:
 ```
 The container port from the application is 3000.
 
-3. Define a service account that has sufficient permissions.
+3. Define a service account that has sufficient permissions and assign it properly to your container.
