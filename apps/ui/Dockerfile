@@ -4,7 +4,6 @@ RUN apk add --no-cache dumb-init
 ENV NODE_ENV production
 ENV PORT 3000
 WORKDIR /usr/src/app
-RUN echo $(ls -la)
 
 COPY ./.output /usr/src/app/
 RUN chown -R node:node .
