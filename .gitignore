@@ -50,3 +50,5 @@ dist
 /.npm/
 kube-config.yml
 /dist/
+/cache/
+/.vscode/
